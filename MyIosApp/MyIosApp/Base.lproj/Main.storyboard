@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyIosApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Birth year" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Dy-z5-MuK">
+                                <rect key="frame" x="16" y="107" width="343" height="32"/>
+                                <color key="backgroundColor" red="0.90194884076410631" green="0.95686274510000002" blue="0.62947199385627584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="nf6-lH-UaN"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1J-WB-Kva">
+                                <rect key="frame" x="275" y="353" width="80" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="IfS-uA-2Q0"/>
+                                    <constraint firstAttribute="width" constant="80" id="g6W-Dm-ELO"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Find Age">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="findage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bxc-EU-4LC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Your Age is 0 years" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yn-gR-t0b">
+                                <rect key="frame" x="12" y="223" width="343" height="25"/>
+                                <color key="backgroundColor" red="0.92755140494533672" green="0.51695349034398985" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" red="0.90194884080000004" green="0.95686274510000002" blue="0.62947199389999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.61396799264013702" green="0.98206980375047892" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2Dy-z5-MuK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="89" id="6z7-4N-gfo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Dy-z5-MuK" secondAttribute="trailing" constant="16" id="7yz-QI-GZy"/>
+                            <constraint firstItem="T1J-WB-Kva" firstAttribute="top" secondItem="7yn-gR-t0b" secondAttribute="bottom" constant="48" id="Ktp-4v-Laq"/>
+                            <constraint firstItem="7yn-gR-t0b" firstAttribute="leading" secondItem="2Dy-z5-MuK" secondAttribute="leading" id="Mxi-so-IE6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T1J-WB-Kva" secondAttribute="trailing" constant="20" id="RLT-Hs-qDr"/>
+                            <constraint firstItem="7yn-gR-t0b" firstAttribute="top" secondItem="2Dy-z5-MuK" secondAttribute="bottom" constant="139" id="YI6-cz-dNQ"/>
+                            <constraint firstItem="7yn-gR-t0b" firstAttribute="trailing" secondItem="2Dy-z5-MuK" secondAttribute="trailing" id="kQH-GN-J8w"/>
+                            <constraint firstItem="2Dy-z5-MuK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vce-zd-DBc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="birthage" destination="2Dy-z5-MuK" id="I7Z-1L-u3g"/>
+                        <outlet property="showage" destination="7yn-gR-t0b" id="J0U-bN-BsC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-270" y="133"/>
+        </scene>
+    </scenes>
+</document>
